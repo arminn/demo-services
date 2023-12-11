@@ -15,13 +15,14 @@ build:
 # Information about publishing process (URI, cert, etc)
 publish:
     url: aoscloud.io
-    service_uid: #add service UID
+    service_uid: b69bcf98-8fa6-4b08-afd6-1367d0a595fd
     tls_pkcs12: aos-user-sp.p12
+    version: "1.0.1"
 
 # Service configuration
 configuration:
     # Startup command
-    cmd: helloworld_xen-arm64
+    cmd: ifa_xen-arm64
     instances:
         minInstances: 1        # indicates minimal number of service's instances that should be run on Unit
         priority: 20            # Priority of service instance (0-1000000000, 0 is the lowest priority), default value is 0
